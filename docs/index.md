@@ -1,8 +1,13 @@
 # 引入
 
-本docs用于为China Sector Package的使用者进行扇区特定功能进行介绍。
+本docs用于为China Sector Package的EuroScope使用进行介绍。
 
-EuroScope的基本使用可以通过查阅：
+EuroScope的基本使用可以通过查阅[官网](https://www.euroscope.hu/wp/documentation-about-euroscope/)，[Flyatcsim EuroScope扇区使用教程 v1.3](refer/Flyatcsim EuroScope扇区使用教程 v1.3.pdf)
 
-[官网]: https://www.euroscope.hu/wp/documentation-about-euroscope/
+Topsky的使用参考：[TopSky plugin for EuroScope - General - B](refer/TopSky plugin for EuroScope - General - B.pdf)
 
+Ground Radar的使用参考：[Ground Radar plugin for EuroScope - General](refer/Ground Radar plugin for EuroScope - General.pdf)
+
+下文将分每一部分进行介绍：
+
+1. [CSP插件](CSP.md) 

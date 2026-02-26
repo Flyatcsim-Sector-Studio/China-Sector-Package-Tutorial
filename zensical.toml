@@ -40,7 +40,7 @@ features = [
 [project]
 docs_dir = "docs"
 
-site_name = "APOCFLY模拟飞行·文档站"
+site_name = "China Sector Package·文档站"
 site_description = "Use Markdown language to finish the Operating document."
 site_url = "https://docs.apocfly.com"
 
