@@ -5,6 +5,8 @@ homepage = "https://flyatcsim.club"
 variant = "modern"
 language = "zh"
 direction = "ltr"  # left to right 自作向右 阅读
+favicon = "images/Logo.svg"
+logo = "images/Logo.svg"
 
 features = [
     # 代码框
