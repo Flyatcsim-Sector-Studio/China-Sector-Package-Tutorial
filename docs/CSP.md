@@ -12,23 +12,23 @@ CSP Plugin
 
    - 功能：用于显示进入扇区的移交点
    - 显示：XXXXX*
-     - XXXXX为移交点的名称
-     - *代表有更多内容
+     - XXXXX：移交点的名称
+     - *：有更多内容
    - 用处：Sector Inbound List の COPN
 
 2. COPX
 
    - 功能：用于显示离开扇区的移交点
    - 显示：XXXXX*
-     - XXXXX为移交点的名称
-     - *代表有更多内容
+     - XXXXX：移交点的名称
+     - *：有更多内容
    - 用处：Sector Exit List の COPX
 
 3. DES
 
    - 功能：显示距离计算的下高的距离
    - 显示：XXX
-     - XXX为纯数字
+     - XXX：纯数字
      - 单位：nm
    - 用处：Sector Exit List の TD
 
@@ -53,14 +53,14 @@ CSP Plugin
 
    - 功能：检查飞行计划
    - 显示：XXXX*
-     - XXXX为错误类型
-     - *为有 **≥1** 个错误
+     - XXXX：错误类型
+     - *：有 **≥1** 个错误
      - 类型：
      - ALT：巡航高度不正确（根据起飞和落地机场的经度进行匹配）
      - ADEP/ADES：起飞/落地机场不在数据库
-     - VFR：计划为VFR
+     - VFR：计划：VFR
      - TYPE：航空器机型不在数据库中
-     - PBN：PBN代码未填写/缺少性能（/TEXT为未填写PBN代码，/RNAV为填写的PBN代码不具备RNAV1能力）
+     - PBN：PBN代码未填写/缺少性能（/TEXT：未填写PBN代码，/RNAV：填写的PBN代码不具备RNAV1能力）
      - ACEQ：设备代码的未填写
      - ROTE：航路不在数据库
    - 用处：Departure List の FPC
@@ -69,7 +69,7 @@ CSP Plugin
 
    - 功能：显示起始高度
    - 显示：XXXX
-     - XXXX为纯数字
+     - XXXX：纯数字
      - 单位：百米
      - 颜色：
        - 白色：根据已选择的起始高度匹配到高度但**未确认**
@@ -95,23 +95,23 @@ CSP Plugin
 
    - 功能：机组申请的项目
    - 显示：CLX/PUX
-     - X为纯数字
-     - CL为放行
-     - PU为推出
+     - X：纯数字
+     - CL：放行
+     - PU：推出
    - 用处：Departure List の # 和 Startup List の #
 
 10. Origin Error Indicator
 
     - 功能：显示出发机场错误
     - 显示：*/空
-      - *为出发机场不存在
+      - *：出发机场不存在
     - 用处：FP List の 第一项（空）
 
 11. SIE
 
     - 功能：显示飞行航路中的离场点
     - 显示：XXXXX
-      - XXXXX为点的名称
+      - XXXXX：点的名称
     - 用处：Departure List の SIE 和 Startup List の SIE
 
 12. SLOT
@@ -122,24 +122,24 @@ CSP Plugin
 
     - 功能：显示飞行航路中的STAR程序
     - 显示：XXXXX*
-      - XXXXX为程序名称
-      - *为还有更多信息
+      - XXXXX：程序名称
+      - *：还有更多信息
     - 用处：Sector Exit List の STAR
 
 14. STE
 
     - 功能：显示飞行航路中的进场点
     - 显示：XXXXX
-      - XXXXX为点的名称
+      - XXXXX：点的名称
     - 用处：Sector Exit List の STE
 
 15. Tag Line 3 Item
 
     - 功能：显示Tag的第三行的内容
     - 显示：AAAA BBBB / XXXXX XXXXX （每两秒改变一次）
-      - AAAA为落地机场
-      - BBBB为机型类型
-      - XXXXX XXXXX为下两个点的名称
+      - AAAA：落地机场
+      - BBBB：机型类型
+      - XXXXX XXXXX：下两个点的名称
     - 用处：Tag の 第三行
 
 ## 左右键功能介绍
@@ -154,9 +154,9 @@ CSP Plugin
 
         若无将发送```Please set the active departure runway at XXXX(机场)```
 
-     2. 检查是否为多跑道可用
+     2. 检查是否：多跑道可用
 
-        若为多跑道运行，且未确认跑道将发送```There are more than one runway is avilible. Please set the runway firstly.```
+        若：多跑道运行，且未确认跑道将发送```There are more than one runway is avilible. Please set the runway firstly.```
 
      3. 检查是否有SID匹配
 
@@ -173,7 +173,7 @@ CSP Plugin
 2. Find Currect Aircraft Position
 
    - 功能：寻找机组位置
-   - 运行流程：以机组为中心画一个圆，3秒后自动消失
+   - 运行流程：以机组：中心画一个圆，3秒后自动消失
    - 用处：TYPE の 右键
 
 3. Open Descent alt edit
@@ -215,7 +215,7 @@ CSP Plugin
 
    ```
    !!! Note
-       注：这会将同一跑道、同一起飞机场的机组均预设置为该起始高度
+       注：这会将同一跑道、同一起飞机场的机组均预设置：该起始高度
    ```
 
 7. Set Inticial Altitude / Comfirm Initicial Altitude
@@ -247,7 +247,7 @@ CSP Plugin
 11. Show Star Full Name
 
     - 功能：显示Star的全部信息
-    - 运行流程：出现一个列表以整个Star的内容，可能包含有ILS-Y、ILS-X等信息，默认为ILS-Z
+    - 运行流程：出现一个列表以整个Star的内容，可能包含有ILS-Y、ILS-X等信息，默认：ILS-Z
     - 用处：Star の 右键
 
 12. Toggle Historical Route
@@ -277,7 +277,7 @@ CSP Plugin
 
 1. ···\China_Sector_Package\Data\Plugins\China Sector Package Plugins\CSP-Settings.json
 
-   - Replace-auth-address：EuroScope-jwt-auth替换的地址（空为Vatsim）
+   - Replace-auth-address：EuroScope-jwt-auth替换的地址（空：Vatsim）
 
    - Color-：
 
@@ -300,6 +300,5 @@ CSP Plugin
 
 ```
 !!! Note
-
     注：添加、修改、删除的数据请符合json的格式要求，否则未知错误无法估计
 ```
