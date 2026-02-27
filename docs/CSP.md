@@ -183,15 +183,16 @@ CSP Plugin
 	- 运行流程：
 
 		1. 打开一个未来航路点的列表
-    
+   
 		2. 待选择了一个航路点后，出现一个输入框以输入高度（百米）
-    
+   
 			!!! Note
 				注：6000M 写为 60
 		
 		3. 启用**同一个航路点，同一个落地机场**的机组的TD计算
-
-  - 用处：TD 的 左键
+	
+	  - 用处：TD 的 左键
+	
 
 4. Open Request List
 
@@ -215,7 +216,7 @@ CSP Plugin
 
 	- 用处：LI 的 左键
 
-6. Set Inticial Altitude
+6. Set Initial Altitude
 
 	- 功能：设置起始高度
 	- 运行流程：打开一个高度选择列表进行选择
@@ -224,7 +225,7 @@ CSP Plugin
 	!!! Note
 		 注：这会将同一跑道、同一起飞机场的机组均预设置：该起始高度
 
-7. Set Inticial Altitude / Comfirm Initicial Altitude
+7. Set Initial Altitude / Comfirm Initial Altitude
 
 	- 功能：设置起始高度 / 确认起始高度
 	- 运行流程：
