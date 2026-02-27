@@ -27,8 +27,8 @@ CSP Plugin
 3. DES
 
 	- 功能：显示距离计算的下高的距离
-	- 显示：XXX
-		- XXX：纯数字
+	- 显示：`XXX`
+		- `XXX`：纯数字
 		- 单位：nm
 	- 用处：Sector Exit List 的 TD
 
@@ -55,25 +55,25 @@ CSP Plugin
 	- 显示：`XXXX*`
 		- `XXXX`：错误类型
 		- `*`：有 **≥1** 个错误
-		- 类型：
-		- ALT：巡航高度不正确（根据起飞和落地机场的经度进行匹配）
-		- ADEP/ADES：起飞/落地机场不在数据库
-		- VFR：计划：VFR
-		- TYPE：航空器机型不在数据库中
-		- PBN：PBN代码未填写/缺少性能（/TEXT：未填写PBN代码，/RNAV：填写的PBN代码不具备RNAV1能力）
-		- ACEQ：设备代码的未填写
-		- ROTE：航路不在数据库
+	- 类型：
+		- ```ALT```：巡航高度不正确（根据起飞和落地机场的经度进行匹配）
+		- `ADEP/ADES`：起飞/落地机场不在数据库
+		- `VFR`：计划：VFR
+		- `TYPE`：航空器机型不在数据库中
+		- `PBN`：PBN代码未填写/缺少性能（`/TEXT`：未填写PBN代码，`/RNAV`：填写的PBN代码不具备RNAV1能力）
+		- `ACEQ`：设备代码的未填写
+		- `ROTE`：航路不在数据库
 	- 用处：Departure List 的 FPC
 
 6. Inticial Altitude
 
 	- 功能：显示起始高度
-	- 显示：XXXX
-		- XXXX：纯数字
+	- 显示：`XXXX`
+		- `XXXX`：纯数字
 		- 单位：百米
 		- 颜色：
-		 - 白色：根据已选择的起始高度匹配到高度但**未确认**
-		 - 与其他项目同色：**已确认**
+			- 白色：根据已选择的起始高度匹配到高度但**未确认**
+			- 与其他项目同色：**已确认**
 	- 用处：Departure List 的 CFL
 
 7. Language Indicator
@@ -85,33 +85,33 @@ CSP Plugin
 8. LID Indicator
 
 	- 功能：显示机组是否接收到了LID
-	- 显示：▉
+	- 显示：`▉`
 		- 颜色：
-		 - 红色：未发送
-		 - 绿色：已发送
+			- 红色：未发送
+			- 绿色：已发送
 	- 用处：Sector Exit List 的 LI
 
 9. On Request
 
 	- 功能：机组申请的项目
-	- 显示：CLX/PUX
-		- X：纯数字
-		- CL：放行
-		- PU：推出
+	- 显示：`CLX/PUX`
+		- `X`：纯数字
+		- `CL`：放行
+		- `PU`：推出
 	- 用处：Departure List 的 # 和 Startup List 的 #
 
 10. Origin Error Indicator
 
 	 - 功能：显示出发机场错误
-	 - 显示：*/空
-		- *：出发机场不存在
+	 - 显示：`*/空`
+		- `*`：出发机场不存在
 	 - 用处：FP List 的 第一项（空）
 
 11. SIE
 
 	 - 功能：显示飞行航路中的离场点
-	 - 显示：XXXXX
-		- XXXXX：点的名称
+	 - 显示：`XXXXX`
+		- `XXXXX`：点的名称
 	 - 用处：Departure List 的 SIE 和 Startup List 的 SIE
 
 12. SLOT
@@ -121,25 +121,25 @@ CSP Plugin
 13. STAR
 
 	 - 功能：显示飞行航路中的STAR程序
-	 - 显示：XXXXX*
-		- XXXXX：程序名称
-		- *：还有更多信息
+	 - 显示：`XXXXX*`
+		- `XXXXX`：程序名称
+		- `*`：还有更多信息
 	 - 用处：Sector Exit List 的 STAR
 
 14. STE
 
 	 - 功能：显示飞行航路中的进场点
-	 - 显示：XXXXX
-		- XXXXX：点的名称
+	 - 显示：`XXXXX`
+		- `XXXXX`：点的名称
 	 - 用处：Sector Exit List 的 STE
 
 15. Tag Line 3 Item
 
 	 - 功能：显示Tag的第三行的内容
-	 - 显示：AAAA BBBB / XXXXX XXXXX （每两秒改变一次）
-		- AAAA：落地机场
-		- BBBB：机型类型
-		- XXXXX XXXXX：下两个点的名称
+	 - 显示：`AAAA BBBB / XXXXX XXXXX` （每两秒改变一次）
+		- `AAAA`：落地机场
+		- `BBBB`：机型类型
+		- `XXXXX XXXXX`：下两个点的名称
 	 - 用处：Tag 的 第三行
 
 ## 左右键功能介绍
@@ -179,10 +179,17 @@ CSP Plugin
 3. Open Descent alt edit
 
 	- 功能：选择一个点到达并输入高度以启用TD计算
+
 	- 运行流程：
 		1. 打开一个未来航路点的列表
-		2. 待选择了一个航路点后，出现一个输入框以输入高度（百米，6000m->60）
+       	
+		2. 待选择了一个航路点后，出现一个输入框以输入高度（百米）
+       	
+		!!! Note
+		注：6000m 写为 60
+       	
 		3. 启用**同一个航路点，同一个落地机场**的机组的TD计算
+       	
 	- 用处：TD 的 左键
 
 4. Open Request List
